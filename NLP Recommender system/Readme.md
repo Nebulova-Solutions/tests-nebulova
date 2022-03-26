@@ -19,6 +19,7 @@ The goal of this challenge is to predict which of the provided pairs of question
 	- For example:
 		- New question: "How much money can I earn as a trader?"
 		- Let's say that you have predicted that the previous question falls in the "economy" category (defined by you), so you can show questions in the same category that are already in the dataset.
+4. As an extra (and not mandatory task) you can create a simple API using Flask or FastAPI to test the code that you have implemented in point 3. The API should receive the test user (with a GET request) and return an array of related questions existent in the dataset. The model has to be already fitted to test that API.
 
 Points 2. y 3. are pretty similar but are not the same, the 2. is focused in predict the most similar questions in the dataset (offering a replacement for the user query), and 3. is focused in giving alternative information to the user in the same category (if we want to maintain the user the maximum time possible in our website, for example).
 
