@@ -9,6 +9,7 @@ Complete the following three challenges.
    4. If you find some values that can't be filled in that way (like point 3), the rows should be dropped. For example, in the following timeserie you don't know the last value of the first NaN: (*NaN*,1.0,*NaN*,*NaN*,*NaN*,2.0). So, you have to drop the first row and fill the rest of the data as we have seen in point 3: (1.0,*1.0*,*1.0*,*1.0*,2.0)
    5. If you find some variable that doesn't have any data (as you can see in RD_VAR1 and RD_VAR2), you have to assume that the value will be zero in the output of the test.
    6. Finally, you have to aggregate the data per MACHINE_ID and by month using the max value in every group and adjusting your output according to the format that you can see in the test. Look at the following example:
+
 ```json
 {
    MACHINE_ID: {
@@ -19,6 +20,7 @@ Complete the following three challenges.
       }
    }
 ```
+
 2. Given the script named agg.py you have to modify the implementation to make it faster as possible.
 3. Create a schema.yaml file following the OpenAPI specifications to deploy an API with the following specs. You have to define and API KEY to protect the resources and you can define the response in JSON format with the types you prefer.
    - Server address: api.nebulova.es (this is an example server, not a valid one)
